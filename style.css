@@ -1,0 +1,155 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 80%;
+  justify-content: center;
+  margin-top: 1.5rem;
+  background: #143484;
+}
+
+.addItems-container{
+  background: yellow;
+}
+
+.addItems-container, .displayItems-container{
+  margin: 1rem 0;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  border: 2px solid #322728;
+  box-shadow: 0 5px 10px #3d0917;
+}
+
+.addItems-title, .displayItems-title{
+  text-transform: capitalize;
+}
+
+.addItems-title{
+  color: #081631;
+}
+
+.addItems-action, .displayItems-action {
+  border: 2px solid #282732;
+  padding: 0.5rem 0;
+  text-transform: capitalize;
+  border-radius: 0.5rem;
+  display: none;
+}
+
+.addItems-input{
+  background: rgb(4, 78, 107);
+  border: none;
+  border-bottom: 2px solid rgb(218, 223, 225);
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 0.2rem;
+  color: #260575;
+  outline: none;
+}
+
+form-input::placeholder{
+  color: gray;
+}
+.addItems-submit,.displayItems-clear{
+  display: block;
+  width: 90%;
+  margin: 2rem auto 0 auto;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  outline: none;
+}
+
+.addItems-submit{
+  color: #020d20;
+  background: white;
+  border: 3px solid #174aa7;
+  transition: all 2s ease;
+}
+
+.addItems-submit:hover{
+  background: #b6c2d9;
+  color: #272932;
+}
+
+.displayItems-container{
+  background: yellow;
+}
+
+.displayItems-title{
+  color: #052642;
+  margin-bottom: 0.25rem;
+}
+
+.grocery-item{
+  display:grid;
+  grid-template-columns: 4fr 1fr;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  transition: all 1s ease-in-out;
+  margin: 0.5rem 0;
+}
+
+.grocery-item:hover{
+  background: #00071b;
+}
+
+.grocery-item__title{
+  text-align: left;
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: #272932;
+}
+
+.grocery-item__link{
+  color: red;
+  transition: all 2s linear;   
+}
+
+.grocery-item:hover .grocery-item__link{
+  transform: scale(2);
+}
+
+.displayItems-clear{
+  color: red;
+  background: transparent;
+  border: 3px solid #0e4e86;
+  transition: all 2s ease;
+}
+
+.displayItems-clear{
+  background: #4d7ea8;
+  color:#272932;
+  outline:none;
+  background: white;
+}
+
+.alert{
+  color: red;
+  border-color: rgb(14, 79, 125);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.success{
+  color:rgb(184, 32, 37);
+  border-color: rgb(32, 184, 32);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 768px){
+  body{
+      grid-template-columns: 50%;
+  }
+}
+
+
